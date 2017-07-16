@@ -1,16 +1,16 @@
 <div class="row container-fluid">
-    
+
     <div class="span4">
-        
-        <img id="profile_pic" src="assets/img/ali.jpg" alt="Ali Mashreghi" class="img-circle img-responsive" style="float:left; width:147px; height:150px; margin: 5px;">
-            
-            </div>
+
+        <img id="profile_pic" src="img/ali.jpg" alt="Ali Mashreghi" class="img-circle img-responsive" style="float:left; width:147px; height:150px; margin: 5px;">
+
+    </div>
     
     <div class="span8">
-        
+
         <p style="margin:15px;">
-        <font size=5><b>Ali Mashreghi</b></font><br/>
-        I am a computer science PhD student at University of Victoria. My supervisor is <a href="http://webhome.cs.uvic.ca/~val/" target="_blank"> Dr. Valerie King.</a> I received my MSc degree in computer science from Sharif University of Technology, under supervision of <a href="http://sharif.edu/~zarei/" target="_blank">Dr. Alireza Zarei</a>. I also did my undergrad in computer engineering at Ferdowsi University of Mashhad.
+            <font size=5><b>Ali Mashreghi</b></font><br/>
+            I have been a computer science PhD student at University of Victoria since 2016. My supervisor is <a href="http://webhome.cs.uvic.ca/~val/" target="_blank"> Dr. Valerie King.</a> I received my MSc degree in computer science from Sharif University of Technology in 2014, under supervision of <a href="http://sharif.edu/~zarei/" target="_blank">Dr. Alireza Zarei</a>. I got my bachelor's degree in computer engineering at Ferdowsi University of Mashhad in 2012.
         </p>
     </div>
     
@@ -21,7 +21,7 @@
 
 <div class="row container-fluid">
     <div class="col-sm-4 btn-group-vertical" style="max-width: 400px;">
-        <p> I am interested in theoretical computer science, in general; however, in particular, my interests include but are not limited to:
+        <p> I am generally interested in theoretical computer science. In particular, however, my interests include but are not limited to:
         </p>
         
         <button id="distButton" type="button" class="btn btn-info" style="text-align:left;" data-toggle="collapse" data-target="#distComp" aria-expanded="true" onclick="toggleArrow('distButton')">&#x25B9; Distributed Computing </button>
@@ -55,9 +55,41 @@
         
     </div> <!-- column ends -->
     
-    <div class="col-sm-2">
+    <div class="col-sm-8">
+        <p>
+        These are some great textbooks that I stronlgy recommend to anyone who wants to gain a deeper knowledge about these areas of computer science.
+        </p>
+
         <figure style="display: inline-block;">
-            <img id="dist_book" src="assets/img/dist.jpg" alt="Distributed Book" class="img-rounded img-responsive" style="float:left; width:147px; height:150px; margin: 5px;">
+            <img id="dist_book" src="img/dist.jpg" alt="Distributed Book" class="img-rounded img-responsive" style="float:left; width:147px; height:150px; margin: 5px;">
+            <figcaption style="text-align:center;">
+                <a href="https://www.amazon.ca/Distributed-Computing-Locality-Sensitive-David-Peleg/dp/0898714648" target="_black">Amazon link</a>
+            </figcaption>
+        </figure>
+        <figure style="display: inline-block;">
+            <img id="rand_book" src="img/rand.jpg" alt="Randomized Book" class="img-rounded img-responsive" style="float:left; width:147px; height:150px; margin: 5px;">
+
+            <figcaption style="text-align:center;">
+                <a href="https://www.amazon.ca/Probability-Computing-Randomized-Algorithms-Probabilistic/dp/0521835402/ref=sr_1_1?s=books&ie=UTF8&qid=1499839119&sr=1-1&keywords=mitzenmacher+book" target="_black">Amazon link</a>
+            </figcaption>
+        </figure>
+        <figure style="display: inline-block;">
+            <img id="approx_book" src="img/aprox.jpg" alt="Approximation Book" class="img-rounded img-responsive" style="float:left; width:147px; height:150px; margin: 5px;">
+            <figcaption style="text-align:center;">
+                <a href="https://www.amazon.ca/Approximation-Algorithms-Vijay-V-Vazirani/dp/3540653678" target="_black">Amazon link</a>
+            </figcaption>
+        </figure>
+        <figure style="display: inline-block;">
+            <img id="geom_book" src="img/geom.jpg" alt="Geometry Book" class="img-rounded img-responsive" style="float:left; width:147px; height:150px; margin: 5px;">
+            <figcaption style="text-align:center;">
+                <a href="https://www.amazon.ca/Computational-Geometry-Applications-Mark-Berg/dp/3642096816/ref=sr_1_1?s=books&ie=UTF8&qid=1499839139&sr=1-1&keywords=de+berg+book+geometry" target="_black">Amazon link</a>
+            </figcaption>
+        </figure>
+    </div>
+
+   <!--  <div class="col-sm-2">
+        <figure style="display: inline-block;">
+            <img id="dist_book" src="img/dist.jpg" alt="Distributed Book" class="img-rounded img-responsive" style="float:left; width:147px; height:150px; margin: 5px;">
                 <figcaption style="text-align:center;">
                     <a href="https://www.amazon.ca/Distributed-Computing-Locality-Sensitive-David-Peleg/dp/0898714648" target="_black">Amazon link</a>
                 </figcaption>
@@ -65,7 +97,7 @@
     </div>
     <div class="col-sm-2">
         <figure style="display: inline-block;">
-            <img id="rand_book" src="assets/img/rand.jpg" alt="Randomized Book" class="img-rounded img-responsive" style="float:left; width:147px; height:150px; margin: 5px;">
+            <img id="rand_book" src="img/rand.jpg" alt="Randomized Book" class="img-rounded img-responsive" style="float:left; width:147px; height:150px; margin: 5px;">
                 
                 <figcaption style="text-align:center;">
                     <a href="https://www.amazon.ca/Probability-Computing-Randomized-Algorithms-Probabilistic/dp/0521835402/ref=sr_1_1?s=books&ie=UTF8&qid=1499839119&sr=1-1&keywords=mitzenmacher+book" target="_black">Amazon link</a>
@@ -74,7 +106,7 @@
     </div>
     <div class="col-sm-2">
         <figure style="display: inline-block;">
-            <img id="approx_book" src="assets/img/aprox.jpg" alt="Approximation Book" class="img-rounded img-responsive" style="float:left; width:147px; height:150px; margin: 5px;">
+            <img id="approx_book" src="img/aprox.jpg" alt="Approximation Book" class="img-rounded img-responsive" style="float:left; width:147px; height:150px; margin: 5px;">
                 <figcaption style="text-align:center;">
                     <a href="https://www.amazon.ca/Approximation-Algorithms-Vijay-V-Vazirani/dp/3540653678" target="_black">Amazon link</a>
                 </figcaption>
@@ -82,10 +114,10 @@
     </div>
     <div class="col-sm-2">
         <figure style="display: inline-block;">
-            <img id="geom_book" src="assets/img/geom.jpg" alt="Geometry Book" class="img-rounded img-responsive" style="float:left; width:147px; height:150px; margin: 5px;">
+            <img id="geom_book" src="img/geom.jpg" alt="Geometry Book" class="img-rounded img-responsive" style="float:left; width:147px; height:150px; margin: 5px;">
                 <figcaption style="text-align:center;">
                     <a href="https://www.amazon.ca/Computational-Geometry-Applications-Mark-Berg/dp/3642096816/ref=sr_1_1?s=books&ie=UTF8&qid=1499839139&sr=1-1&keywords=de+berg+book+geometry" target="_black">Amazon link</a>
                 </figcaption>
                 </figure>
-    </div>
+            </div> -->
 </div> <!-- row ends -->

@@ -1,7 +1,19 @@
-$(document).ready(
-                  function() {}
+$(document).ready(function() {
+    if(location.hash){
+        $("a[href='" + location.hash + "']").tab("show");
+    }
+    $(document.body).on("click", "a[data-toggle]", function(event){
+        location.hash = this.getAttribute("href");
+    });
+}
 );
 
+$(window).on("popstate", function(){
+    var anchor = location.hash || $("a[data-toggle='tab']").first().attr("href");
+    $("a[href='" + anchor + "']").tab("show");
+});
+
+/*
 function openTab(evt, nextTab){
     
     //Hide the content of the current tab
@@ -25,12 +37,15 @@ function openTab(evt, nextTab){
     tabId.style.display = "block";
     evt.currentTarget.className += " active";
 }
+*/
 
 
-
-//Toggles the direction of the arrow (right to down and vice versa)
-//right arrow codes: 9657	25B9 ->
-//left arrow codes: 9663	25BF \down
+/**
+changes the direction of the arrow from right to down and vice versa
+@param id the unique id of the button
+//right arrow codes: dec=9657 hex=25B9
+//down arrow codes: 9663 25BF
+*/
 function toggleArrow(id){
     console.log(id);
     var btn = $('#' + id);
@@ -49,7 +64,5 @@ function toggleArrow(id){
         }
     }
     
-//    if(currentName.search())
-    console.log(toggleName);
-   btn.text(toggleName);
+    btn.text(toggleName);
 }
