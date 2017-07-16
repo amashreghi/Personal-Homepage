@@ -29,7 +29,15 @@ li {
 
 }
 
-span {
+.resume-section-title{
     background: #FFFFFF;
     padding: 0 10px;
+}
+
+.first-title-letters{
+    /*font-family: serif;*/
+    /*font-size: 150%;*/
+    /*font-weight: bold;*/
+    color: #ED9A29;
+    padding: 0;
 }
