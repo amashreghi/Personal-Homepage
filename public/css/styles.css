@@ -25,8 +25,8 @@ li {
     text-align: left;
     border-bottom: 1px solid #000;
     line-height: 0.1em;
-    margin: 10px 0 20px;
-
+    margin-top: 30px;
+    margin-bottom: 0px;
 }
 
 .resume-section-title{
@@ -40,4 +40,9 @@ li {
     /*font-weight: bold;*/
     color: #ED9A29;
     padding: 0;
+}
+
+.publication{
+
+    margin-top: 100px;
 }
