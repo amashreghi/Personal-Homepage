@@ -1,43 +1,64 @@
-$(document).ready(function() {
+$(document).ready(
+
+/**
+This makes to remain on the same tab after refreshing the page
+*/
+function() {
     if(location.hash){
         $("a[href='" + location.hash + "']").tab("show");
     }
-    $(document.body).on("click", "a[data-toggle]", function(event){
-        location.hash = this.getAttribute("href");
-    });
+    $(document.body).on("click", "a[data-toggle]", 
+        function(event){
+            location.hash = this.getAttribute("href");
+        });
+    checkMap();
+
+
+  //   $('#contact').on('shown.bs.modal', function () {
+  //     $('#contact').addClass('active');
+  //     console.log(10);
+  // })
 }
+
+
 );
 
+/**
+This makes to remain on the same tab after refreshing the page
+*/
 $(window).on("popstate", function(){
     var anchor = location.hash || $("a[data-toggle='tab']").first().attr("href");
     $("a[href='" + anchor + "']").tab("show");
-});
 
-/*
-function openTab(evt, nextTab){
-    
-    //Hide the content of the current tab
-    tabcontents = $(".tabcontent");
-    for(i = 0; i < tabcontents.length; i++){
-        tabcontents[i].style.display = "none";
-        console.log(3);
-    }
-    
-    //remove active from all tablink classes
-    tablinks = $(".tablinks");
-    for(i = 0; i < tablinks.length; i++){
-        tablinks[i].className.replace(" active", "");
-    }
-    
-    console.log('#' + nextTab);
-
-    //document.getElementById(nextTab).style.display = "block";
-    
-    tabId = $('#' + nextTab)[0]; //Getting the first element in the returned array
-    tabId.style.display = "block";
-    evt.currentTarget.className += " active";
+    checkMap();
 }
+
+
+);
+
+
+var initCanBeCalled = false;
+/**
+Adds or removes 'active' class based on the current tab
 */
+function checkMap(){
+    console.log(location.hash);
+
+    if(location.hash == "#contact"){
+        $('#map')[0].style.display = 'block';
+        if(initCanBeCalled) initMap();
+        // $('#contact').addClass('active');
+        // console.log('contact activated');
+        // if(init_called == true) initMap(); //To make sure that google library has been loaded
+    }
+    else{
+        $('#map')[0].style.display = 'none';
+
+        // $('#contact').removeClass('active');
+        // console.log('contact disabled');
+
+    }
+}
 
 
 /**
