@@ -9,7 +9,7 @@
     <div class="span8">
 
         <p style="margin:15px;">
-            <font size=5><b>Ali Mashreghi</b></font><br/>
+            <H1><font size=5><b>Ali Mashreghi</b></font><br/></H1>
             I have been a computer science PhD student at University of Victoria since 2016. My supervisor is <a href="http://webhome.cs.uvic.ca/~val/" target="_blank"> Dr. Valerie King.</a> I received my MSc degree in computer science from Sharif University of Technology in 2014, under supervision of <a href="http://sharif.edu/~zarei/" target="_blank">Dr. Alireza Zarei</a>. I got my bachelor's degree in computer engineering at Ferdowsi University of Mashhad in 2012.
         </p>
     </div>

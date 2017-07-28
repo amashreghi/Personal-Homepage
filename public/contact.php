@@ -4,6 +4,6 @@
 		Department of Computer Science<br>
 		University of Victoria<br>
 		Victoria, Canada <br>
-		Email: amashreg[at]uvic.ca
+		Email: amashreg[at]uvic[dot]ca
 	</div>
 </row> <!-- row ends -->

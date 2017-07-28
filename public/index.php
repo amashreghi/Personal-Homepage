@@ -3,6 +3,11 @@
 <html lang="en">
 <head>
     <meta charset="utf-8">
+
+  <meta name="description" content="Ali Mashreghi's Academic Personal Page">
+  <meta name="keywords" content="Distributed,Approximation,Randomized,Geometry,Ali,Mashreghi,Ebook,Topcoder,Codeforces,Leetcode,Stack Overflow,Programming,UVic,University of Victoria,Sharif University of Technology, Ferdowsi University of Mashhad">
+  <meta name="author" content="Ali Mashreghi">
+
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <!-- Latest compiled and minified CSS -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
@@ -46,7 +51,11 @@
                 <?php include "contact.php" ?>
             </div> 
 
-            <div id="map" style="display: none;"></div>
+            <div class="row container-fluid">
+            <div id="map" class="col-sm-12" style="display: none;">
+                
+            </div>
+            </div>
             <script>
                 function initMap() {
                 // console.log($('#contact').addClass('active'));
@@ -62,6 +71,10 @@
                 });
 
                 initCanBeCalled = true;
+
+                google.maps.event.addDomListener(window, 'resize', function() {
+                    map.setCenter(center);
+                });
             }
         </script>
 

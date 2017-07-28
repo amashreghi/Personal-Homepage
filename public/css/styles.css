@@ -49,7 +49,7 @@ li {
 
 
 #map {
-    width:600px;
+    width:max-width;
     height:400px;
     background:white;
 }
